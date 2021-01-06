@@ -21,7 +21,5 @@ jobs:
         run: Rscript -e 'rmarkdown::render("test.Rmd")'
     
       - name: commit results
-        run: |
-        git add test.html man/figures/test-*
-        git commit -m "Re-build test.Rmd"
-        git push origin || echo "No changes to commit"
+        run: git add test.html man/figures/test-*
+        
