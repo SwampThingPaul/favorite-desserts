@@ -23,5 +23,5 @@ jobs:
       - name: commit results
         run: |
         git add test.html man/figures/test-*
-        git commit -m "Re-build test.Rmd" || echo "No changes to commit"
+        git commit -m "Re-build test.Rmd"
         git push origin || echo "No changes to commit"
