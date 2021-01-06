@@ -1,0 +1,23 @@
+---
+title: "test"
+author: "Paul Julian"
+date: "1/6/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+This is a test ran on `r paste(Sys.time())` 
+
+
+
+```{r}
+
+plot(rnorm(100))
+```
+
+
+END TEST
