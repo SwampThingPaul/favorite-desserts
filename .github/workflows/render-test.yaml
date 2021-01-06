@@ -19,4 +19,3 @@ jobs:
       - name: commit results
         run: |
         git commit test.html -m 'Re-build test.Rmd' || echo "No changes to commit"
-        
