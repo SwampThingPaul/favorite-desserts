@@ -15,7 +15,7 @@ jobs:
       - name: Install packages
         run: Rscript -e 'install.packages(c("rmarkdown","knitr"))'
       - name: Render README
-        run: Rscript -e 'rmarkdown::render(test.Rmd")'
+        run: Rscript -e 'rmarkdown::render("test.Rmd")'
       - name: commit results
         run: |
         git add test.html
